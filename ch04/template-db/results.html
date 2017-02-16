@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>City Search</title>
+</head>
+<body>
+  <h1>Search Results</h1>
+  <table border='1'>
+    <tr>
+      <th>City</th>
+      <th>Country Code</th>
+      <th>Population</th>
+    </tr>
+    {{range .}}
+      <tr>
+        <td>{{.Name}}</td>
+        <td>{{.CountryCode}}</td>
+        <td>{{.Population}}</td>
+      </tr>
+    {{end}}
+  </table>
+</body>
+</html>

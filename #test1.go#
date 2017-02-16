@@ -1,3 +1,5 @@
+
+
 package main
 
 import (
@@ -6,10 +8,10 @@ import (
 
 func main() {
 	myArray := [...]string{"Apples", "Oranges", "Bananas"}
-	fmt.Printf("Hello")
 	fmt.Printf("Initial array values: %v\n", myArray)
 	myFunction(myArray)
 	fmt.Printf("Final array values: %v\n", myArray)
+
 
 }
 
