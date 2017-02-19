@@ -58,8 +58,8 @@ func (c City) FormatPopulation(n int) string {
 var database *sql.DB
 
 func main() {
-
-	db, err := sql.Open("mysql", "root:oracle@tcp(127.0.0.1:3306)/world")
+	// replace "root" and "password" with your database login credentials
+	db, err := sql.Open("mysql", "root:password@tcp(127.0.0.1:3306)/world")
 	if err != nil {
 		log.Println("Could not connect!")
 	}
