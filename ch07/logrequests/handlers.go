@@ -63,7 +63,7 @@ func CityAdd(w http.ResponseWriter, r *http.Request) {
 	// Write to the database
 	addResult := dbCityAdd(city)
 
-	// Format the response
+	// Send the response
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusCreated)
 	w.Write(addResult)
@@ -78,7 +78,7 @@ func CityDelete(w http.ResponseWriter, r *http.Request) {
 	// Query the database
 	deleteResult := dbCityDelete(cityId)
 
-	// Format the response
+	// Send the response
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 	w.Write(deleteResult)
